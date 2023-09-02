@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "2lt7EsX6f443ZZBW75rNIDq2IU68E4h7rMsAWvC09Ocde+S7AQpn9ci6co2xa2SC4RTLqUaMVYf0M8uRy4WrVg==",
+  "success": true,
+  "projectFilePath": "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ador\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Ador\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Ador\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Ador\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Ador\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Ador\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
