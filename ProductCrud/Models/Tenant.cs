@@ -16,7 +16,7 @@ namespace ProductCrud.Models
         public string TenantName { get; set; }
 
         // for one to many relation
-        public List<Tenant> Tenants { get; set; }
+        public List<Product> Products { get; set; }
 
 
         // define other required fields here
