@@ -7,9 +7,9 @@ namespace ProductCrud.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IdentityDbContext _context;
         private readonly DbSet<T> _entities;
-        public GenericRepository(ApplicationDbContext context)
+        public GenericRepository(IdentityDbContext context)
         {
             _context = context;
             _entities = context.Set<T>();
