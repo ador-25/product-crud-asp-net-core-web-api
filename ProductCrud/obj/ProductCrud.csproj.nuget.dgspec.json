@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj": {}
+    "D:\\Now\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj": {}
   },
   "projects": {
-    "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj": {
+    "D:\\Now\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
+        "projectUniqueName": "D:\\Now\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
         "projectName": "ProductCrud",
-        "projectPath": "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
+        "projectPath": "D:\\Now\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
         "packagesPath": "C:\\Users\\Ador\\.nuget\\packages\\",
-        "outputPath": "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\obj\\",
+        "outputPath": "D:\\Now\\product-crud-asp-net-core-web-api\\ProductCrud\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ador\\AppData\\Roaming\\NuGet\\NuGet.Config",

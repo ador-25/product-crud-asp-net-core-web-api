@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FvDsjnt81rVz5HkstLMExZ2VPOeh3CNa87dCXM/JQyR4zk0nVWDD6rbdQbWiUFiaX8kPZAf2zpbjprF+DkZYjw==",
+  "dgSpecHash": "ZahdzASs1kMBZvbu20dpsCCwcZqfahcVK3I6r18ImxOAZTqgHhYD/foKnMos/bIcoanhy8fvWrDciRFdYDKkfw==",
   "success": true,
-  "projectFilePath": "D:\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
+  "projectFilePath": "D:\\Now\\product-crud-asp-net-core-web-api\\ProductCrud\\ProductCrud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ador\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ador\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "b76adc83-b371-49e3-ad6b-93d548cc72b3",
+		"name": "Agile Crafts Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16040327"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Abp.TenantId",
+						"value": "20",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userNameOrEmailAddress\": \"silas.mind@northsouth.edu\",\r\n  \"password\": \"Pass@123\",\r\n  \"tenantName\": \"ABC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{login}}/api/TokenAuth/Authenticate/register",
+					"host": [
+						"{{login}}"
+					],
+					"path": [
+						"api",
+						"TokenAuth",
+						"Authenticate",
+						"register"
+					],
+					"query": [
+						{
+							"key": "Abp.TenantId",
+							"value": "25",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Abp.TenantId",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userNameOrEmailAddress\": \"abtahee.ador@northsouth.edu\",\r\n  \"password\": \"Pass@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/api/TokenAuth/Authenticate/",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"TokenAuth",
+						"Authenticate",
+						""
+					],
+					"query": [
+						{
+							"key": "Abp.TenantId",
+							"value": "25",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWJ0YWhlZS5hZG9yQG5vcnRoc291dGguZWR1IiwianRpIjoiYzc2YTU3NTEtOTM5MC00ZTIwLWI1NTItOWQ2MjJiOGIxMDk4IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVGVuYW50IiwiZXhwIjoxNzI1MzQ0NDU3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjA5IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzIwOSJ9.JtnZto0OhW1yVy1lZi7dHFVgqoZHGfuYVO40fPtk0ys"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Abp.TenantId",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 10,\r\n        \"name\": \"Adidas Black -V \",\r\n        \"description\": \"123 123 123 123 125\",\r\n        \"isAvailable\": true,\r\n        \"tenantId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{local}}/api/services/app/ProductSync/CreateOrEdit"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWJ0YWhlZS5hZG9yQG5vcnRoc291dGguZWR1IiwianRpIjoiYzc2YTU3NTEtOTM5MC00ZTIwLWI1NTItOWQ2MjJiOGIxMDk4IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVGVuYW50IiwiZXhwIjoxNzI1MzQ0NDU3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjA5IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzIwOSJ9.JtnZto0OhW1yVy1lZi7dHFVgqoZHGfuYVO40fPtk0ys"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Abp.TenantId",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": "{{local}}/api/services/app/ProductSync/GetAllProduct"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWJ0YWhlZS5hZG9yQG5vcnRoc291dGguZWR1IiwianRpIjoiYzc2YTU3NTEtOTM5MC00ZTIwLWI1NTItOWQ2MjJiOGIxMDk4IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVGVuYW50IiwiZXhwIjoxNzI1MzQ0NDU3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjA5IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzIwOSJ9.JtnZto0OhW1yVy1lZi7dHFVgqoZHGfuYVO40fPtk0ys"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Abp.TenantId",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7003/api/services/app/ProductSync/Get-Product?productid=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7003",
+					"path": [
+						"api",
+						"services",
+						"app",
+						"ProductSync",
+						"Get-Product"
+					],
+					"query": [
+						{
+							"key": "productid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Product Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWJ0YWhlZS5hZG9yQG5vcnRoc291dGguZWR1IiwianRpIjoiYzc2YTU3NTEtOTM5MC00ZTIwLWI1NTItOWQ2MjJiOGIxMDk4IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVGVuYW50IiwiZXhwIjoxNzI1MzQ0NDU3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjA5IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzIwOSJ9.JtnZto0OhW1yVy1lZi7dHFVgqoZHGfuYVO40fPtk0ys"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Abp.TenantId",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7003/api/services/app/ProductSync/Delete?productid=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7003",
+					"path": [
+						"api",
+						"services",
+						"app",
+						"ProductSync",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "productid",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "production",
+			"value": "http://fileproxyserver-prod.ap-southeast-1.elasticbeanstalk.com",
+			"type": "string"
+		},
+		{
+			"key": "local",
+			"value": "https://localhost:7003",
+			"type": "string"
+		}
+	]
+}
