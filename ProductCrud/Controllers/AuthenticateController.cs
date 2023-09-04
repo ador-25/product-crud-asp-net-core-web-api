@@ -53,7 +53,6 @@ namespace ProductCrud.Controllers
             var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
-            //_userData.AddUser(model);
             if (!await _roleManager.RoleExistsAsync(UserRoles.Tenant))
                 await _roleManager.CreateAsync(new IdentityRole(UserRoles.Tenant));
 
@@ -72,7 +71,6 @@ namespace ProductCrud.Controllers
             if (temp)
             {
                 var newUser = await _userManager.FindByEmailAsync(model.UserNameOrEmailAddress);
-                //var newSchool = await _schoolRepository.FindByConditionAsync(u => u.SchoolEmail == school.SchoolEmail);
                 newUser.TenantId = tenant.TenantId;
                 var res = await _userManager.UpdateAsync(newUser);
                 if (!res.Succeeded)
