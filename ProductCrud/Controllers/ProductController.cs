@@ -12,6 +12,7 @@ namespace ProductCrud.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
+        // IGenericRepository to interact with database
         private readonly IGenericRepository<Product> _productRepository;
         private readonly IGenericRepository<Tenant> _tenantRepository;
         private readonly UserManager<ApplicationUser> _userManager;
